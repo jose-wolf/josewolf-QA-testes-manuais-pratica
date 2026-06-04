@@ -14,4 +14,5 @@
 | Impacto                  | Afeta 0% dos usuários, porém o texto está ocupando mais espaço que necessário                         |
 | Ambiente                 | - Ubuntu linux 24.04.4 <br> - Firefox, Brave  <br>                                                    |
 | Evidências               | ![Evidência do Bug](evidencia/TC002 login-bug-ui-ux.png)                                               |                                                                                        |
+| Categoria do defeito     | Usabilidade / UI                                                                                                                  |
 

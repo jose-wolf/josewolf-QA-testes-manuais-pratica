@@ -1,9 +1,9 @@
 
 | Campo                    | Descrição                                                                                                                         |
-| ------------------------ |-----------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Funcional      | RF 2                                                                                                                              |
 | Bug Id                   | bug-002                                                                                                                           |
-| Relacionado ao Test Case | TC-003                                                                                                                            |
+| Relacionado ao Test Case | TC-001                                                                                                                            |
 | Título                   | Descrição do produto exibe texto técnico ao usuário                                                                               |
 | Severidade               | Baixa                                                                                                                             |
 | Prioridade               | Baixa                                                                                                                             |
@@ -13,14 +13,14 @@
 | Impacto                  | Não afeta a funcionalidade do sistema, porém compromete a qualidade visual e a experiência do usuário                             |
 | Ambiente                 | - Ubuntu Linux 24.04.4 <br> - Firefox, Brave                                                                                      |
 | Evidências               | ![Evidência do Bug](./evidencia/TC003 descricao-do-produto.png)                                                                   |
-
+| Categoria do defeito     | Usabilidade / UI                                                                                                                  |
 ***
 
 | Campo                    | Descrição                                                                                                                                       |
 | ------------------------ |-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Funcional      | RF 2                                                                                                                                            |
 | Bug Id                   | bug-003                                                                                                                                         |
-| Relacionado ao Test Case | TC-003                                                                                                                                          |
+| Relacionado ao Test Case | TC-001                                                                                                                                          |
 | Título                   | Nome do produto exibe nomenclatura técnica ao usuário                                                                                           |
 | Severidade               | Baixa                                                                                                                                           |
 | Prioridade               | Baixa                                                                                                                                           |
@@ -30,3 +30,4 @@
 | Impacto                  | Não afeta a funcionalidade do sistema, porém reduz a clareza da interface e a experiência do usuário                                            |
 | Ambiente                 | - Ubuntu Linux 24.04.4 <br> - Firefox, Brave                                                                                                    |
 | Evidências               | ![Evidência do Bug](./evidencia/TC003 bug-title--produto.png)                                                                                   |
+| Categoria do defeito     | Usabilidade / UI                                                                                                                  |

@@ -5,7 +5,7 @@
 | Objetivo do teste | Realizar login na aplicação                                                                                |
 | Pré-condição      | - Ter um usuário cadastrado<br>- Ter uma senha cadastrada                                                  |
 | Dados necessários | - Usuário e senha para login<br>- Usuário com acesso: `standard_user`<br>- Senha de acesso: `secret_sauce` |
-| Requisito         | REQ 1 - Funcionalidade Login  <br/>                                                                        |
+| Requisito         | RF 1 - Funcionalidade Login  <br/>                                                                         |
 
 ***
 

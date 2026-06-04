@@ -35,3 +35,10 @@ Validar o site, testar os usuários disponibilizados, e validar as funcionalidad
 ## Escopo
 
 Validar a autenticação dos usuários na tela de login, validar o fluxo do site conforme o usuário.
+
+## Testes usados
+
+| tipo de teste      | descrição                                                                                  |
+|--------------------|--------------------------------------------------------------------------------------------|
+| Teste Negativo     | usado para buscar a falha de uma aplicação                                                 |
+| Teste de aceitação | Olha o sistema como um todo, verifica se tudo foi atentido conforme o que foi especificado |

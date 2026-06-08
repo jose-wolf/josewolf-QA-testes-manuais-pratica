@@ -10,9 +10,9 @@
 | Prioridade               | Baixa                                                                                                 |
 | Passos para reproduzir   | 1. Acessar https://www.saucedemo.com/ <br> 2. Inserir login/senha inválidos <br> 3. Clicar em "Login" |
 | Resultado obtido         | Epic sadface: Username and password do not match any user in this service                             |
-| Resutado esperado        | Epic sadface: Username and password do not match any user in this service                             |
-| Impacto                  | Afeta 0% dos usuários, porém o texto está ocupando mais espaço que necessário                         |
+| Resultado esperado       | A mensagem de erro deve ser exibida de forma clara, sem sobreposição visual                           |
+| Impacto | Não afeta a funcionalidade do sistema, porém compromete a apresentação visual da mensagem de erro |
 | Ambiente                 | - Ubuntu linux 24.04.4 <br> - Firefox, Brave  <br>                                                    |
-| Evidências               | ![Evidência do Bug](evidencia/TC002 login-bug-ui-ux.png)                                               |                                                                                        |
-| Categoria do defeito     | Usabilidade / UI                                                                                                                  |
+| Evidências               | ![Evidência do Bug](evidencia/TC002 login-bug-ui-ux.png)                                              |                                                                                        |
+| Categoria do defeito     | Usabilidade / UI                                                                                      |
 

@@ -16,3 +16,10 @@
 | Evidências               | ![Evidência do Bug](evidencia/TC002 login-bug-ui-ux.png)                                              |                                                                                        |
 | Categoria do defeito     | Usabilidade / UI                                                                                      |
 
+bug-001
+Tela de Login
+Afeta:
+- standard_user
+- problem_user
+- locked_out_user
+- performance_glitch_user

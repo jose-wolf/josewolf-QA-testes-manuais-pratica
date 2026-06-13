@@ -10,5 +10,6 @@
 | Resultado obtido         | A opção selecionada é alterada visualmente, porém os produtos permanecem na mesma ordem           |
 | Resultado esperado       | Os produtos devem ser reordenados conforme o filtro selecionado                                   |
 | Impacto                  | Impede o uso correto da funcionalidade de ordenação de produtos                                   |
+| Evidências               | [Vídeo da reprodução do defeito](https://drive.google.com/file/d/1ArUxTIAsQXgXXEBp7RobDg0zaXfzTMHQ/view?usp=sharing)                                                                |
 | Categoria do defeito     | Funcional                                                                                         |
 

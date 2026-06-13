@@ -1,3 +1,14 @@
+# Test Case - Menu Lateral (problem_user)
+
+| Campo             | Descrição |
+|-------------------|-----------|
+| Tipo de teste     | Funcional |
+| Subtipo de teste  | Teste de aceitação |
+| Objetivo do teste | Verificar o funcionamento das opções disponíveis no menu lateral |
+| Pré-condição      | O usuário deve estar autenticado como problem_user |
+| Dados necessários | Usuário problem_user |
+| Requisito         | RF 3 - Funcionalidade Menu Lateral |
+
 | ID | TC-003                                                                                    |
 |----|-------------------------------------------------------------------------------------------|
 | Título | Validar redirecionamento da opção About                                                   |

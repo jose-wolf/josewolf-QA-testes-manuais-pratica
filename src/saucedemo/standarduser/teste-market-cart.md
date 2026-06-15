@@ -1,52 +1,56 @@
 # Test Case - Tela de Carrinho de Compras
 
-| Campo | Descrição |
-|--------|--------|
-| Tipo de teste | Funcional |
-| Subtipo de teste | Teste de aceitação |
-| Objetivo do teste | Verificar se o carrinho de compras funciona corretamente durante a navegação e manipulação dos produtos |
-| Pré-condição | O usuário deve estar autenticado no sistema |
-| Dados necessários | Possuir um usuário cadastrado e ao menos um produto disponível para compra |
-| Requisito | RF 3 - Funcionalidade Carrinho de Compras |
+| Campo               | Descrição                                                                                                                                         |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Funcional | RF-03 – Funcionalidade Carrinho de Compras                                                                                                       |
+| Tipo de Teste       | Funcional                                                                                                                                         |
+| Subtipo de Teste    | Teste de Aceitação                                                                                                                                |
+| Objetivo do Teste   | Verificar se o carrinho de compras exibe corretamente os produtos adicionados e se as ações de remoção, continuidade de compra e checkout funcionam conforme esperado |
+| Pré-condição        | Usuário `standard_user` autenticado e com ao menos um produto adicionado ao carrinho                                                              |
+| Dados de Teste      | Username: `standard_user` \| Password: `secret_sauce`                                                                                             |
 
-## Casos de teste
+---
 
-| ID | TC-009 |
-|----|--------|
-| Título | Validar exibição dos produtos no carrinho |
-| Pré-condições | O usuário deve possuir cadastro no sistema e estar autenticado |
-| Passos | 1. Realizar login <br> 2. Adicionar produtos ao carrinho <br> 3. Clicar no ícone do carrinho |
-| Resultado esperado | Os produtos adicionados devem ser exibidos corretamente no carrinho com nome, descrição, quantidade e preço |
-| Status | Passou |
+## Casos de Teste
 
-| ID | TC-010 |
-|----|--------|
-| Título | Validar remoção de produtos pelo carrinho |
-| Pré-condições | O usuário deve possuir cadastro no sistema e estar autenticado |
-| Passos | 1. Realizar login <br> 2. Adicionar produtos ao carrinho <br> 3. Acessar o carrinho <br> 4. Clicar em "Remove" |
-| Resultado esperado | O produto deve ser removido do carrinho e a quantidade de itens deve ser atualizada corretamente |
-| Status | Passou |
+| Campo              | Descrição                                                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | TC-CART-001                                                                                                                                                                                               |
+| Título             | Validar exibição dos produtos no carrinho                                                                                                                                                                 |
+| Pré-condição       | Usuário `standard_user` autenticado e com ao menos um produto adicionado ao carrinho                                                                                                                      |
+| Passos             | 1. Acessar `https://www.saucedemo.com/` e realizar login com `standard_user` <br> 2. Adicionar um produto ao carrinho usando **Add to cart** <br> 3. Clicar no ícone do carrinho                          |
+| Resultado Esperado | O carrinho deve exibir corretamente o nome, a descrição, a quantidade e o preço de cada produto adicionado                                                                                                |
+| Status             | Passou                                                                                                                                                                                                    |
 
-| ID | TC-010 |
-|----|--------|
-| Título | Validar remoção de produtos pelo carrinho |
-| Pré-condições | O usuário deve possuir cadastro no sistema e estar autenticado |
-| Passos | 1. Realizar login <br> 2. Adicionar produtos ao carrinho <br> 3. Acessar o carrinho <br> 4. Clicar em "Remove" |
-| Resultado esperado | O produto deve ser removido do carrinho e a quantidade de itens deve ser atualizada corretamente |
-| Status | Passou |
+---
 
-| ID | TC-011 |
-|----|--------|
-| Título | Validar funcionalidade Continue Shopping |
-| Pré-condições | O usuário deve possuir cadastro no sistema e estar autenticado |
-| Passos | 1. Realizar login <br> 2. Adicionar produtos ao carrinho <br> 3. Acessar o carrinho <br> 4. Clicar em "Continue Shopping" |
-| Resultado esperado | O usuário deve ser redirecionado para a tela de produtos |
-| Status | Passou |
+| Campo              | Descrição                                                                                                                                                                                                                 |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | TC-CART-002                                                                                                                                                                                                               |
+| Título             | Validar remoção de produto pelo carrinho                                                                                                                                                                                  |
+| Pré-condição       | Usuário `standard_user` autenticado e com ao menos um produto no carrinho                                                                                                                                                 |
+| Passos             | 1. Acessar `https://www.saucedemo.com/` e realizar login com `standard_user` <br> 2. Adicionar um produto ao carrinho usando **Add to cart** <br> 3. Clicar no ícone do carrinho <br> 4. Clicar em **Remove** no produto  |
+| Resultado Esperado | O produto deve ser removido do carrinho e o contador do ícone do carrinho deve ser atualizado para refletir a quantidade correta de itens                                                                                  |
+| Status             | Passou                                                                                                                                                                                                                    |
 
-| ID | TC-012 |
-|----|--------|
-| Título | Validar acesso à etapa de checkout |
-| Pré-condições | O usuário deve possuir cadastro no sistema e estar autenticado |
-| Passos | 1. Realizar login <br> 2. Adicionar produtos ao carrinho <br> 3. Acessar o carrinho <br> 4. Clicar em "Checkout" |
-| Resultado esperado | O usuário deve ser redirecionado para a tela de preenchimento dos dados de compra |
-| Status | Passou |
+---
+
+| Campo              | Descrição                                                                                                                                                                                                                        |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | TC-CART-003                                                                                                                                                                                                                      |
+| Título             | Validar funcionalidade Continue Shopping                                                                                                                                                                                         |
+| Pré-condição       | Usuário `standard_user` autenticado e na tela do carrinho                                                                                                                                                                        |
+| Passos             | 1. Acessar `https://www.saucedemo.com/` e realizar login com `standard_user` <br> 2. Adicionar um produto ao carrinho usando **Add to cart** <br> 3. Clicar no ícone do carrinho <br> 4. Clicar em **Continue Shopping**         |
+| Resultado Esperado | O usuário deve ser redirecionado para a tela **Products**                                                                                                                                                                        |
+| Status             | Passou                                                                                                                                                                                                                           |
+
+---
+
+| Campo              | Descrição                                                                                                                                                                                                           |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | TC-CART-004                                                                                                                                                                                                         |
+| Título             | Validar acesso à etapa de checkout pelo carrinho                                                                                                                                                                    |
+| Pré-condição       | Usuário `standard_user` autenticado e com ao menos um produto no carrinho                                                                                                                                           |
+| Passos             | 1. Acessar `https://www.saucedemo.com/` e realizar login com `standard_user` <br> 2. Adicionar um produto ao carrinho usando **Add to cart** <br> 3. Clicar no ícone do carrinho <br> 4. Clicar em **Checkout**     |
+| Resultado Esperado | O usuário deve ser redirecionado para a tela de checkout com o formulário de informações do comprador                                                                                                               |
+| Status             | Passou                                                                                                                                                                                                             |

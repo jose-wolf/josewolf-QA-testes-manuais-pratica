@@ -1,35 +1,35 @@
-# Test Case - Finalização da Compra
+# Test Case - Tela de Resumo da Compra
 
-| Campo             | Descrição |
-|-------------------|-----------|
-| Tipo de teste     | Funcional |
-| Subtipo de teste  | Teste de aceitação |
-| Objetivo do teste | Verificar se o sistema conclui a compra corretamente e exibe a confirmação ao usuário |
-| Pré-condição      | O usuário deve estar autenticado e estar na tela Checkout Overview |
-| Dados necessários | Produto adicionado ao carrinho e dados válidos no checkout |
-| Requisito         | RF 6 - Funcionalidade Finalização da Compra |
+| Campo               | Descrição                                                                                                                                                              |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Funcional | RF-05 – Funcionalidade Resumo da Compra                                                                                                                               |
+| Tipo de Teste       | Funcional                                                                                                                                                              |
+| Subtipo de Teste    | Teste de Aceitação                                                                                                                                                     |
+| Objetivo do Teste   | Verificar se a tela de resumo da compra exibe corretamente os produtos, informações de pagamento, envio e valores, e se o cálculo do total está de acordo com os itens |
+| Pré-condição        | Usuário `standard_user` autenticado, com ao menos um produto no carrinho e dados do checkout preenchidos                                                               |
+| Dados de Teste      | Username: `standard_user` \| Password: `secret_sauce` \| Produto adicionado ao carrinho \| First Name: `José` \| Last Name: `Silva` \| Postal Code: `12345`            |
 
+---
 
-| ID | TC-020 |
-|----|--------|
-| Título | Validar finalização da compra |
-| Pré-condições | O usuário deve estar na tela Checkout Overview |
-| Passos | 1. Prosseguir até a tela Checkout Overview <br> 2. Clicar em "Finish" |
-| Resultado esperado | O sistema deve concluir a compra e exibir a tela Checkout Complete com mensagem de confirmação |
-| Status | Passou |
+## Casos de Teste
 
-| ID | TC-021 |
-|----|--------|
-| Título | Validar limpeza do carrinho após finalização da compra |
-| Pré-condições | O usuário deve ter concluído uma compra com sucesso |
-| Passos | 1. Finalizar uma compra com sucesso <br> 2. Verificar o ícone do carrinho |
-| Resultado esperado | O carrinho deve estar vazio e não deve exibir quantidade de itens pendentes |
-| Status | Passou |
+| Campo              | Descrição                                                                                                                                                                                                                                                                    |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | TC-ORDER-001                                                                                                                                                                                                                                                                   |
+| Título             | Validar exibição do resumo da compra na tela Checkout Overview                                                                                                                                                                                                               |
+| Pré-condição       | Usuário `standard_user` autenticado, com ao menos um produto no carrinho e dados de checkout preenchidos                                                                                                                                                                     |
+| Dados de Teste     | Produto adicionado ao carrinho \| First Name: `José` \| Last Name: `Silva` \| Postal Code: `12345`                                                                                                                                                                          |
+| Passos             | 1. Acessar `https://www.saucedemo.com/` e realizar login com `standard_user` <br> 2. Adicionar ao menos um produto ao carrinho usando **Add to cart** <br> 3. Acessar o carrinho e clicar em **Checkout** <br> 4. Preencher os dados obrigatórios <br> 5. Clicar em **Continue** |
+| Resultado Esperado | A tela **Checkout: Overview** deve exibir corretamente: nome do produto, descrição, quantidade, preço unitário, informações de pagamento, informações de envio e o valor total da compra                                                                                      |
+| Status             | Passou                                                                                                                                                                                                                                                                       |
 
-| ID | TC-022 |
-|----|--------|
-| Título | Validar retorno para a página inicial após conclusão da compra |
-| Pré-condições | O usuário deve estar na tela Checkout Complete |
-| Passos | 1. Finalizar a compra <br> 2. Clicar em "Back Home" |
-| Resultado esperado | O usuário deve ser redirecionado para a tela Products |
-| Status | Passou |
+---
+
+| Campo              | Descrição                                                                                                                                                                                      |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | TC-ORDER-002                                                                                                                                                                              |
+| Título             | Validar cálculo do valor total na tela Checkout Overview                                                                                                                                       |
+| Pré-condição       | Usuário `standard_user` autenticado e na tela **Checkout: Overview**                                                                                                                           |
+| Passos             | 1. Prosseguir até a tela **Checkout: Overview** <br> 2. Verificar o valor exibido em **Item total** <br> 3. Verificar o valor exibido em **Tax** <br> 4. Verificar o valor exibido em **Total** |
+| Resultado Esperado | O valor exibido em **Total** deve corresponder exatamente à soma do valor de **Item total** com o valor de **Tax** informados pelo sistema                                                     |
+| Status             | Passou                                                                                                                                                                                         |

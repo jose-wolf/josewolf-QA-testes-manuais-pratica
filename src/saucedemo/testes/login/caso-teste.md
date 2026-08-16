@@ -311,3 +311,88 @@ O usuário não deve ser autenticado e o sistema deve informar que o campo **Pas
 
 **Status: Passou**
 
+****
+
+# TC-LOGIN-013 — Login com performance_glitch_user
+
+**Funcionalidade:** Login
+**Cenário relacionado:** CN-LOGIN-005 — Autenticação de usuário com comportamento de performance
+
+**Pré-condição:** Aplicação disponível e usuário não autenticado.
+
+**Dados de teste:**
+
+* Username: `performance_glitch_user`
+* Password: `secret_sauce`
+
+**Passos:**
+
+1. Acessar `https://www.saucedemo.com/`.
+2. Informar `performance_glitch_user` no campo **Username**.
+3. Informar `secret_sauce` no campo **Password**.
+4. Clicar no botão **Login**.
+5. Aguardar o carregamento da página **Products**.
+
+**Resultado esperado:**
+O usuário deve ser autenticado com sucesso e redirecionado para a página **Products**.
+
+**Status:** Passou
+
+**Observação:**
+Foi identificado um delay perceptível durante a autenticação e o carregamento da página **Products**. O usuário consegue acessar o sistema  após o atraso.
+
+---
+
+# TC-LOGIN-014 — Login com locked_out_user
+
+**Funcionalidade:** Login
+**Cenário relacionado:** CN-LOGIN-004 — Validação de acesso de usuário bloqueado
+
+**Pré-condição:** Aplicação disponível e usuário não autenticado.
+
+**Dados de teste:**
+
+* Username: `locked_out_user`
+* Password: `secret_sauce`
+
+**Passos:**
+
+1. Acessar `https://www.saucedemo.com/`.
+2. Informar `locked_out_user` no campo **Username**.
+3. Informar `secret_sauce` no campo **Password**.
+4. Clicar no botão **Login**.
+
+**Resultado esperado:**
+O usuário não deve ser autenticado, pois sua conta está bloqueada, e o sistema deve exibir uma mensagem informando que o acesso desse usuário está bloqueado.
+
+**Status:** Passou
+
+****
+
+# TC-LOGIN-015 — Login com demais usuários válidos
+
+**Funcionalidade:** Login  
+**Cenário relacionado:** CN-LOGIN-001 — Autenticação com credenciais válidas
+
+**Pré-condição:** Aplicação disponível e usuário não autenticado.
+
+**Dados de teste:**
+
+| Username | Password | Status |
+|---|---|---|
+| `problem_user` | `secret_sauce` | Passou |
+| `error_user` | `secret_sauce` | Passou |
+| `visual_user` | `secret_sauce` | Passou |
+
+**Passos:**
+
+1. Acessar `https://www.saucedemo.com/`.
+2. Informar um dos usernames listados nos dados de teste.
+3. Informar `secret_sauce` no campo **Password**.
+4. Clicar no botão **Login**.
+5. Repetir o teste para cada usuário listado.
+
+**Resultado esperado:**  
+Cada usuário deve ser autenticado com sucesso e redirecionado para a página **Products**.
+
+**Status:** Passou

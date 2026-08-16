@@ -233,3 +233,81 @@ O usuário não deve ser autenticado, pois a senha informada está incompleta, e
 
 **Status: Passou**
 
+****
+
+# TC-LOGIN-010 — Login com campos vazios
+
+**Funcionalidade:** Login
+**Cenário relacionado:** CN-LOGIN-003 — Validação dos campos obrigatórios
+
+**Pré-condição:** Aplicação disponível e usuário não autenticado.
+
+**Dados de teste:**
+
+* Username: campo vazio
+* Password: campo vazio
+
+**Passos:**
+
+1. Acessar `https://www.saucedemo.com/`.
+2. Manter o campo **Username** vazio.
+3. Manter o campo **Password** vazio.
+4. Clicar no botão **Login**.
+
+**Resultado esperado:**
+O usuário não deve ser autenticado e o sistema deve informar que o campo **Username** é obrigatório.
+
+**Status: Passou**
+
+---
+
+# TC-LOGIN-011 — Login com username vazio e password válido
+
+**Funcionalidade:** Login
+**Cenário relacionado:** CN-LOGIN-003 — Validação dos campos obrigatórios
+
+**Pré-condição:** Aplicação disponível e usuário não autenticado.
+
+**Dados de teste:**
+
+* Username: campo vazio
+* Password: `secret_sauce`
+
+**Passos:**
+
+1. Acessar `https://www.saucedemo.com/`.
+2. Manter o campo **Username** vazio.
+3. Informar `secret_sauce` no campo **Password**.
+4. Clicar no botão **Login**.
+
+**Resultado esperado:**
+O usuário não deve ser autenticado e o sistema deve informar que o campo **Username** é obrigatório.
+
+**Status: Passou**
+
+---
+
+# TC-LOGIN-012 — Login com username válido e password vazio
+
+**Funcionalidade:** Login
+**Cenário relacionado:** CN-LOGIN-003 — Validação dos campos obrigatórios
+
+**Pré-condição:** Aplicação disponível e usuário não autenticado.
+
+**Dados de teste:**
+
+* Username: `standard_user`
+* Password: campo vazio
+
+**Passos:**
+
+1. Acessar `https://www.saucedemo.com/`.
+2. Informar `standard_user` no campo **Username**.
+3. Manter o campo **Password** vazio.
+4. Clicar no botão **Login**.
+
+**Resultado esperado:**
+O usuário não deve ser autenticado e o sistema deve informar que o campo **Password** é obrigatório.
+
+**Status: Passou**
+

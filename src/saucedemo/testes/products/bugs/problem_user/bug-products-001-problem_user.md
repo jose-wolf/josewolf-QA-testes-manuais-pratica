@@ -1,21 +1,27 @@
-# BUG-PRODUCT-STD_USER-001 — Inconsistência nas informações dos produtos
+# BUG-PRODUCT-PROBLEM_USER-001 — Inconsistência nas informações dos produtos
 
-**Caso de teste relacionado:** TC-PRODUCT-STD_USER-001
+**Cenário relacionado:** CN-PRODUCT-001 — Validar as informações exibidas nos produtos
+
+**Caso de teste relacionado:** TC-PRODUCT-PROBLEM_USER-001
+
 **Categoria:** Inconsistência de informações
-**Severidade:** Alta
+
+**Severidade:** Média
+
 **Prioridade:** Alta
+
 **Ambiente:** Firefox 153.0.4 / Ubuntu 24.04.4
 
 ## Passos para reproduzir
 
 1. Acessar `https://www.saucedemo.com/`.
-2. Realizar login com o usuário `standard_user`.
+2. Realizar login com o usuário `problem_user`.
 3. Acessar a página **Products**.
 4. Verificar a imagem, o título e a descrição dos produtos exibidos.
 
 ## Resultado obtido
 
-Foram encontrados dois produtos cujas imagens não correspondem ao título e/ou à descrição apresentada.
+Os produtos apresentam imagens que não correspondem aos respectivos títulos e descrições. Além disso, foram identificados produtos com conteúdo de título e/ou descrição inconsistente com as demais informações apresentadas.
 
 ## Resultado esperado
 
@@ -27,8 +33,7 @@ A inconsistência entre imagem, título e descrição pode causar confusão dura
 
 ## Evidência
 
-
-![BUG-PRODUCTS-STD_USER-001](../evidencias/bug-products-std_user-001-informacoes.png)
+![BUG-PRODUCT-PROBLEM_USER-001](../../evidencias/problem_user/bug-products-problem_user-001-informacoes.png)
 
 
 ## Status

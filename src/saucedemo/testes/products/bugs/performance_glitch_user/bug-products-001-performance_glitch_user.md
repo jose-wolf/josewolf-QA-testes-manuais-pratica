@@ -33,7 +33,7 @@ Prejudica a navegabilidade e fluidez da loja. A espera excessiva ao aplicar filt
 
 ## Evidência
 
-![BUG-PRODUCT-PERFORMANCE_GLITCH_USER-001](../../evidencias/products/bug-producd-001-performance_glitch_user.jpg)
+![BUG-PRODUCT-PERFORMANCE_GLITCH_USER-001](../../evidencias/performance_glitch_user/bug-product-001-performance_glitch_user.png)
 
 ## Status
 
